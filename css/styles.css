@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background: #339DFF;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+table {
+    border: 1px soli black;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 50px;
+    padding: 18px;
+    border: 1px solid black;
+    background: #9acdfd;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
