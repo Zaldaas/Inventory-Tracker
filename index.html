@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Inventory Tracker</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <header>
-        <h1>Welcome to the Inventory Tracker!</h1>
-    </header>
     <body>
-        <div style="padding-top: 20px;">
-            <button>
-                ADD NEW ITEM
-            </button>
+        <header>
+            <h1>Welcome to the Inventory Tracker!</h1>
+        </header>
+        
+        <div class="container">
+            <div class="search-sort-container">
+                <input type="text" id="searchInput" placeholder="Search inventory...">
+                <select id="sortSelect">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="quantity-asc">Quantity (Low to High)</option>
+                    <option value="quantity-desc">Quantity (High to Low)</option>
+                </select>
+            </div>
+            
+            <div class="form-container">
+                <h2>Add New Item</h2>
+                <form id="inventoryForm">
+                    <input type="text" id="itemName" placeholder="Item Name" required>
+                    <input type="number" id="itemQuantity" placeholder="Quantity" min="1" required>
+                    <input type="text" id="itemCategory" placeholder="Category">
+                    <button type="submit" id="addItemBtn">ADD ITEM</button>
+                </form>
+            </div>
+            
+            <div class="inventory-container">
+                <table id="inventoryTable">
+                    <caption>Inventory Items</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Category</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryList">
+                        <!-- Inventory items will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div style="padding-top: 20px;">
-            <table>
-                <caption>Inventory Items</caption>
-                <tr>
-                    
-                </tr>
-            </table>
-        </div>
+        
+        <script src="js/main.js"></script>
     </body>
 </html>
